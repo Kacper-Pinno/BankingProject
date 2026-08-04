@@ -104,7 +104,48 @@ Banking_APP/
 │   └── script.py.mako
 │
 ├── app/
-│   └── ...
+│   ├── api/
+│   │   ├── routes/
+│   │   │   ├── accounts.py
+│   │   │   └── users.py
+│   │   └── __init__.py
+│   ├── database/
+│   │   ├── base.py
+│   │   ├── database.py
+│   │   ├── dependencies.py
+│   │   └── __init__.py
+│   ├── exceptions/
+│   │   ├── account.py
+│   │   ├── user.py
+│   │   └── __init__.py
+│   ├── models/
+│   │   ├── account.py
+│   │   ├── user.py
+│   │   └── __init__.py
+│   ├── repositories/
+│   │   ├── account_repository.py
+│   │   └── user_repository.py
+│   ├── schemas/
+│   │   ├── account.py
+│   │   ├── customer.py
+│   │   ├── user.py
+│   │   └── __init__.py
+│   ├── scripts/
+│   │   ├── test_account_owner.py
+│   │   ├── test_account_repository.py
+│   │   ├── test_database.py
+│   │   ├── test_relationships.py
+│   │   ├── test_schemas.py
+│   │   ├── test_transaction.py
+│   │   └── test_user_repository.py
+│   ├── services/
+│   │   ├── account_service.py
+│   │   └── user_service.py
+│   ├── utils/
+│   │   ├── account_number.py
+│   │   └── __init__.py
+│   ├── main.py
+│   └── __init__.py
 │
 ├── alembic.ini
 ├── docker-compose.yml
